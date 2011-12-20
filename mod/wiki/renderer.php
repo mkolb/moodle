@@ -415,7 +415,7 @@ class mod_wiki_renderer extends plugin_renderer_base {
         CASE VISIBLEGROUPS:
             if ($wiki->wikimode == 'collaborative') {
                 // We need to print a select to choose a course group
-                $params = array('wid'=>$wiki->id, 'title'=>urlencode($page->title));
+                $params = array('wid'=>$wiki->id, 'title'=>$page->title);
                 if ($pagetype == 'files') {
                     $params['pageid'] = $page->id;
                 }
